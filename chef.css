@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 231, 196);
+    color: rgb(0, 0, 0);
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+    background-color: rgb(252, 245, 235);
+}
+
+header h1 {
+    color: black;
+}
+
+nav a {
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(212, 189, 61);
+}
+
+
+
+.title{
+    text-align: center;
+    padding: 70px 20px 30px;
+}
+
+.title h2{
+    font-size: 45px;
+}
+
+.title p{
+    color: #a15e5e;
+    margin-top: 10px;
+}
+
+
+
+.chefs{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 50px 20px;
+
+}
+
+.chef-card{
+    background: #ffffff;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.chef-card:hover{
+    transform: translateY(-10px);
+    background-color: #a15e5e;
+}
+
+.chef-card img{
+    width: 100%;
+    height: 250px;
+
+    border-radius: 12px;
+}
+
+.chef-card h3{
+    margin-top: 10px;
+    color: rgb(90, 67, 26);
+}
+
+.chef-card h6{
+    color: #da8585;
+    margin: 5px 0;
+}
+
+.chef-card p{
+    font-size: 14px;
+    color: #ccc;
+}
+
+.chef-card button{
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    background: orange;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+
+
+footer {
+    background-color: #1a1a1a;
+    padding: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.left h3 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.left p {
+    width: 250px;
+    color: #ccc;
+}
+
+
+
+.center {
+    text-align: center;
+    color: rgb(250, 250, 250);
+}
+
+.center h2 {
+    margin-bottom: 10px;
+}
+.center p{
+      color: #ccc;
+}
+
+
+
+.right {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.right i {
+    cursor: pointer;
+    transition: 0.3s;
+    color: bisque;
+}
+
+.right i:hover {
+    color: orange;
+}
+
+
+
+
+@media(max-width:900px){
+
+    .chefs{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 231, 196);
+}
+
+
+header {
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(255, 231, 196);
+    color: rgb(0, 0, 0);
+}
+
+
+nav a {
+    color: rgb(19, 0, 0);
+    margin-left: 20px;
+text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(212, 189, 61);
+}
+
+
+
+
+.Menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    margin-top: 80px;
+}
+
+
+.center{
+    width: 60%;
+}
+
+.center h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.center p{
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+
+
+.buttons button{
+    
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.buttons button {
+    padding: 10px 20px;
+   
+    border: 2px solid black;
+    background: transparent;
+    cursor: pointer;
+   
+}
+
+
+.buttons button.active {
+    background: black;
+    color: white;
+}
+
+
+
+
+.container{
+    display: flex;
+
+    gap: 15px;
+
+    width: 100%;
+
+    padding: 20px;
+
+    margin-top: 50px;
+}
+
+
+.divs{
+    flex: 1;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.divs img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.divs h3{
+    display: inline-block;
+
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+
+.divs span{
+    color: rgb(212, 189, 61);
+
+    font-weight: bold;
+    margin-left: 10px;
+
+    font-size: 20px;
+}
+
+
+.divs p{
+    margin-top: 15px;
+
+    line-height: 1.7;
+    color: #555;
+}
+
+
+.divs button{
+    margin-top: 20px;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: black;
+    color: white;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.divs button:hover{
+    background: rgb(212, 189, 61);
+}
+
+
+
+.footer{
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 60px;
+
+    background: #1f1f1f;
+    color: white;
+}
+
+
+.left h4{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+
+.left p{
+    color: #ccc;
+    width: 300px;
+    line-height: 1.7;
+}
+
+
+
+.rigth h5{
+    color: rgb(212, 189, 61);
+
+    font-size: 20px;
+
+    letter-spacing: 2px;
+}

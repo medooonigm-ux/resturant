@@ -1,0 +1,248 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgb(252, 245, 235);
+    color: rgb(0, 0, 0);
+}
+
+
+nav a {
+    color: rgb(19, 0, 0);
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(212, 189, 61);
+}
+
+
+.hero {
+    height: 100vh;
+    
+  background: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("./imag/hero.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    background-color: gold;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: white;
+}
+
+
+
+/*sec2*/
+
+.sec2 {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* الصورة */
+.imag2 img {
+    width: 500px;
+}
+
+
+.text2 {
+    max-width: 400px;
+}
+
+.text2 h3 {
+    font-family: 'Georgia', serif;
+    font-size: 34px;
+    font-weight: bold;
+   margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.text2 p {
+    line-height: 1.6;
+    color: #555;
+}
+
+
+
+.sec3 {
+    display: flex;
+    gap: 25px;
+    padding: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+      background-color: rgb(252, 245, 235);
+}
+
+.card {
+    flex: 1 1 260px;
+    max-width: 300px;
+
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.content {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    min-height: 140px; 
+}
+
+.card h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #222;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+.footer{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    text-align: center;
+      padding: 30px;
+  
+}
+
+
+/*responsive*/
+
+
+@media (max-width: 1024px) {
+
+    .sec2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imag2 img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .sec2 {
+        padding: 30px;
+    }
+
+    .imag2 img {
+        width: 100%;
+    }
+
+    .text2 h3 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .sec3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
